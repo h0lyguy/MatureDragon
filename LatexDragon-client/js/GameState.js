@@ -140,6 +140,17 @@ class GameState {
 		}
 	}
 
+
+	/**
+	 * Will restart the countdown of every game that has one currently running.
+	 */
+	restartCountdown () {
+		for (var i in this.array) {
+			if ((this.array[i].countdown != null) && (this.array[i].countdown.state == 'STOPPED'))
+				this.array[i].countdown.startCountdown()
+		}
+	}
+
 	/**
 	 * Create a new Game object.
 	 * Wanted to make Game private and only accesible to GameState but if there's a
