@@ -118,7 +118,9 @@ var self = module.exports = {
 		var o = Request.checkError(response, status, '#gameNotification')
 
 		if (o === false)
+		{
 			throw '[ERROR]: request response invalid, request might have failed.'
+		}
 
 		instance.gameState.getCurrent().gameId = o.id
 
@@ -646,7 +648,6 @@ var self = module.exports = {
 	 */
 	synchronize: () => {
 		const instance = require('../Application')
-
 		instance.synchronize()
 		instance.requestHtml('GAME')
 	},
@@ -688,6 +689,17 @@ var self = module.exports = {
 	},
 
 	/**
+	 * This function save the current game.
+	 * 
+	 */
+	saveGame: (event, index) => {
+		const instance = require('../Application')
+		const Request = require('../Request')
+
+
+	},
+
+	/**
 	 * This function start a new countdown if the current game is a 'NORMAL' game.
 	 * If no countdown existed will create a new one, if the countdown present was
 	 * the serialized form, will create a new countdown using the serialized form,
@@ -719,7 +731,37 @@ var self = module.exports = {
 
 			$('#game-timer').show()
 			$('#game-timer').tooltip('show')
+
+			$('#game-pause').show()
+			
 		}
+	},
+
+	pauseTimer: () => {
+		const instance = require('../Application')
+		const Countdown = require('../Countdown')
+
+		$('#game-pause').hide()
+		$('#game-play').show()
+
+		$('#main-formule').hide()
+		$('#timeline').hide()
+
+		instance.gameState.stopCountdown()
+
+	},
+
+	replayTimer: () => {
+		const instance = require('../Application')
+		const Countdown = require('../Countdown')
+
+		$('#game-pause').show()
+		$('#game-play').hide()
+
+		$('#main-formule').show()
+		$('#timeline').show()
+
+		instance.gameState.restartCountdown()
 	},
 
 	/**
