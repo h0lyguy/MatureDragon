@@ -4,7 +4,7 @@ Projet réalisé par : BONOMINI Romain, GAZE Caroline, VARET Adrien et BERTHOD T
 #Fonctionnalité implémentée :  
 Bouton Pause/ Lecture permettant de mettre le timer en pause ainsi que de cacher la formule / Reprendre la partie.
 
-##Wiki :
+## Wiki :
 Reprise du wiki déja existant du projet LatexDragon, modifications effectuées :  
   - Futur de LatexDragon: 
       Supression de la pause qui à été implémentée avec succès.  
@@ -14,6 +14,6 @@ Reprise du wiki déja existant du projet LatexDragon, modifications effectuées 
       
       
       
-##License
+## License
 Rajout de la license GNU 3.0 à la racine de notre projet.
       
