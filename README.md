@@ -1,7 +1,7 @@
 # MatureDragon
 Projet réalisé par : BONOMINI Romain, GAZE Caroline, VARET Adrien et BERTHOD Timothée
 
-#Fonctionnalité implémentée :  
+## Fonctionnalité implémentée :  
 Bouton Pause/ Lecture permettant de mettre le timer en pause ainsi que de cacher la formule / Reprendre la partie.
 
 ## Wiki :
