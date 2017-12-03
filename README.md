@@ -16,5 +16,5 @@ Reprise du wiki déja existant du projet LatexDragon, modifications effectuées 
       
       
 ## License
-Rajout de la license GNU 3.0 à la racine de notre projet.
+Rajout de la license GNU GPL v3.0 à la racine de notre projet.
       
