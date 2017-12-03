@@ -6,11 +6,12 @@ Bouton Pause/ Lecture permettant de mettre le timer en pause ainsi que de cacher
 
 ## Wiki :
 Reprise du wiki déja existant du projet LatexDragon, modifications effectuées :  
-### Futur de LatexDragon: 
+#### Futur de LatexDragon: 
       - Supression de la pause qui à été implémentée avec succès.  
       - Rajout de pistes afin de résoudre le problème du parenthesage.
- ### Manuel d'installation :  
-      - Changement du dépôt git à cloner, installation plus détaillé pa rapport aux problèmes que nous avons rencontré lors de l'installation
+ #### Manuel d'installation :  
+      - Changement du dépôt git à cloner, installation plus détaillé par rapport  
+      aux problèmes que nous avons rencontré lors de l'installation
       
       
       
